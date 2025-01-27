@@ -1,20 +1,17 @@
-### First Semester BSDS1-A Data Analysis Project using Pandas
-
 # Medical Students Health Analysis
 
 ## About the Dataset
 
 This project utilizes a dataset sourced from [Kaggle](https://www.kaggle.com/), containing information about medical students and their health activities. The dataset includes variables such as age, weight, smoking habits, diabetes status, and other health-related factors.
 
-## Project Objectives 
+## Project Objectives (Research Questions)
 
 This project aims to analyze the health activities and patterns of medical students by addressing the following key questions:
 
-1.  **Gender Distribution:** What is the Gender distribution of medical students in the dataset?
-2.  **Smoking Habits:** How many students in the dataset are smokers?
-3.  **Diabetes Affected Students :** How many students have been affected with diabetes in Age Group?
-4.  **BMI distribution with Gender:** What is the Body Mass Index (BMI) distribution of the students Gender?
-5.  **Conclusion**
+1.  **Age Distribution:** What is the age distribution of medical students in the dataset?
+2.  **Smoking Prevalence:** How many students in the dataset are smokers?
+3.  **Diabetes Prevalence:** How many students have been diagnosed with diabetes, and how does diabetes prevalence vary across different age groups and genders?
+4.  **BMI and Weight Relationship:** What is the Body Mass Index (BMI) distribution of the students?
 
 ## Content of Notebook (`analysis.ipynb`)
 
@@ -39,7 +36,8 @@ The Jupyter Notebook (`analysis.ipynb`) performs the following steps:
     - **Age Group Distribution:** Calculates and visualizes the distribution of students across age groups, broken down by gender.
 
     ```markdown
-    ![Age Group Distribution](./Gender_Age_Group.png)
+    ![Gender_Age_Group.png](https://downlabs.org/wp-content/uploads/2025/01/Gender_Ag_Grou-768x445.png)
+
     *Bar chart showing the number of male and female students in each age group.*
     ```
 
@@ -60,25 +58,50 @@ The Jupyter Notebook (`analysis.ipynb`) performs the following steps:
     - **Diabetes Distribution:** Calculates and visualizes the distribution of diabetes diagnosis (Yes/No) across age groups.
 
     ```markdown
-    ![Diabetes Distribution](./BMI_Age_Group.png)
+    ![Diabetes Distribution](INSERT_RELATIVE_PATH_TO_DIABETES_DISTRIBUTION_IMAGE_HERE)
     *Bar chart showing the number of students with and without diabetes in each age group.*
     ```
-
 ## Conclusion
 
-This exploratory data analysis of medical student health data provides valuable preliminary insights into the health profiles of the students within this dataset.  By addressing the key research questions, we've uncovered the following trends:
+This project reveals a **predominantly healthy profile of medical students** within the dataset, characterized by a balanced gender distribution, concentration in typical medical education age ranges, a majority with normal BMI, and low rates of smoking and diabetes.
 
-1.  **Age Groupings Highlight a Predominantly Young Adult Population:**  The dataset primarily represents medical students in the **19-30 year age range**, with the largest group falling into the **26-30 Years** category. 
-   
+**Key Outcomes:**
 
-2.  **Low Smoking Rates Suggest Health-Conscious Behavior:**  The visualization of smoking habits by age group demonstrably illustrates that the overwhelming majority of students are **non-smokers**. Thus very low smoking prevalence, consistent across all age categories and genders, is a positive indicator of health-conscious behavior among medical students.
+- **Age Group Distribution:** The **26-30 Years** age group represents the largest segment of medical students in the dataset, followed closely by the "19-25 Years" group.
 
-3.  **Diabetes Rate:** Diabetes diagnosis rates are also remarkably low across all age groups, with **most students not reporting a diabetes diagnosis.**  While this is encouraging, it is important to acknowledge the presence of diabetes cases, especially in the older age cohorts (31-34 years). Continued monitoring and preventative measures should remain a priority, especially as the student population ages.
+- **Gender Distribution by Age Group:**
+    - **Balanced Overall:**  Gender distribution is generally balanced across all age groups.
+    - **Largest Group:** The **26-30 Years** age group is the largest overall and also exhibits a balanced number of males and females (250 Females, 247 Males).
+    - **Youngest Group Variation:** The youngest age group ("0-18 Years") shows a slight male majority (29 Males vs 25 Females).
 
-4.  **BMI Analysis Indicates Focus Needed on Weight Management:** The BMI category distribution analysis reveals a nuanced picture of student weight status.  While a substantial portion of students fall within the **"Normal" BMI range**, a considerable number are classified as **"Overweight,"** and a smaller but significant group falls into the **"Obese" category.** Additionally, a portion of students are categorized as **"Underweight."**  This distribution pattern suggests that, while many students maintain a healthy weight, targeted interventions focusing on weight management, nutrition education, and promoting balanced lifestyles could be beneficial, particularly for addressing the "Overweight" and "Obese" categories and supporting healthy weight gain for "Underweight" students.
+- **BMI Category Distribution by Gender:**
+    - **Normal BMI is Most Common:**  The "Normal" BMI category is the most frequent for both genders.
+    - **Overweight Males Slightly Higher:**  There are slightly more overweight males than females in the dataset.
+    - **Healthy Weight Majority:**  Overall, a significant portion of the medical students maintain a healthy weight, as indicated by the dominance of the "Normal" BMI category.
 
-**Overall Project Conclusion and Future Directions:**
+- **Smoking Habits Distribution by Age Group:**
+    - **Lowest Smoking in Older Groups:** Smoking prevalence is lowest in the older age groups ("31-34 Years"), with a minimal number of smokers.
+    - **Younger Groups Show Slightly More Smokers:**  The "19-25 Years" and "26-30 Years" age groups have slightly higher numbers of smokers compared to the oldest and youngest groups, although still a minority.
+    - **Non-Smoking Predominant:**  Across all age groups, the "No Smoking" category is overwhelmingly dominant, emphasizing a strong non-smoking trend.
 
-This initial analysis paints a picture of a relatively healthy medical student population, particularly in terms of low smoking and diabetes rates. However, the analysis also highlights a potential area for focused health promotion and intervention regarding weight management, given the non-negligible percentage of students classified as "Overweight" or "Obese."
+- **Diabetes Distribution by Age Group:**
+    - **Lowest Diabetes in Younger Groups:** Diabetes is least prevalent in the youngest age groups ("0-18 Years" and "19-25 Years"), with very few diagnosed cases.
+    - **Slight Increase in Older Groups:** The "26-30 Years" and "31-34 Years" age groups show a marginal increase in diabetes cases, but the overall prevalence remains low.
+    - **Low Diabetes Overall:**  Diabetes is not a common condition within this medical student population, regardless of age group, but older students show a slightly elevated risk.
+
+**Overall Conclusion:**
+
+The dataset shows a picture of medical students who are generally healthy, particularly regarding smoking and weight. While diabetes prevalence is low, a slight age-related increase suggests a need for age-tailored health awareness. The 26-30 year age group is the largest and most balanced in terms of gender, representing a core demographic within the medical student population. Notably, **no single age group stands out as smoking more than others; smoking is consistently low across all ages.**  This analysis provides a valuable baseline for understanding the health profiles of future medical professionals and points to areas for potential health promotion efforts targeted at older students.
+
+---
 
 
+**Libraries Used:**
+
+*   **pandas:**  Data manipulation and analysis in tabular format.
+
+**Functions and Techniques Used:**
+
+*   **Data Preprocessing:** Missing value handling, data cleaning, categorical data conversion.
+*   **Exploratory Data Analysis (EDA):** Descriptive statistics, data visualization using bar charts, data grouping with `groupby()`, data binning with `pd.cut()`.
+*   **Functions:** `pandas.read_csv()`, `pandas.DataFrame.head()`, `pandas.DataFrame.info()`, `pandas.DataFrame.describe()`, `pandas.DataFrame.isnull().sum()`,  `pandas.DataFrame.fillna()`, `pandas.DataFrame.dropna()`, `pandas.DataFrame.duplicated()`, `pandas.DataFrame.drop_duplicates()`, `pandas.DataFrame.groupby()`, `pandas.DataFrame.plot()`, `pandas.cut()`, `pandas.DataFrame.value_counts()`.
