@@ -1,17 +1,20 @@
 # Medical Students Health Analysis
 
+## Github Profile Link
+- [Hamza Akmal Project](https://github.com/HamzaaAkmal/data-analysis-project.git)
+
 ## About the Dataset
 
 This project utilizes a dataset sourced from [Kaggle](https://www.kaggle.com/), containing information about medical students and their health activities. The dataset includes variables such as age, weight, smoking habits, diabetes status, and other health-related factors.
 
-## Project Objectives (Research Questions)
+## Project Objectives
 
 This project aims to analyze the health activities and patterns of medical students by addressing the following key questions:
 
 1.  **Age Distribution:** What is the age distribution of medical students in the dataset?
 2.  **Smoking Prevalence:** How many students in the dataset are smokers?
 3.  **Diabetes Prevalence:** How many students have been diagnosed with diabetes, and how does diabetes prevalence vary across different age groups and genders?
-4.  **BMI and Weight Relationship:** What is the Body Mass Index (BMI) distribution of the students?
+4.  **BMI Analysis of Students:** What is the Body Mass Index (BMI) distribution of the students?
 
 ## Content of Notebook (`analysis.ipynb`)
 
@@ -33,34 +36,32 @@ The Jupyter Notebook (`analysis.ipynb`) performs the following steps:
     - Creates a new 'Age Group' column based on these categories using `pd.cut`.
 
 4.  **Exploratory Data Analysis (EDA) and Visualizations:**
-    - **Age Group Distribution:** Calculates and visualizes the distribution of students across age groups, broken down by gender.
+    - **Age Group Distribution:** Calculates and visualizes the distribution of students across age groups,  by gender.
 
-    ```markdown
+    
     ![Gender_Age_Group.png](https://downlabs.org/wp-content/uploads/2025/01/Gender_Ag_Grou-768x445.png)
 
-    *Bar chart showing the number of male and female students in each age group.*
-    ```
+    
+    
 
     - **BMI Category Distribution:** Calculates and visualizes the distribution of students across BMI categories ('Underweight', 'Normal', 'Overweight', 'Obese'), broken down by gender.
 
-    ```markdown
-    ![BMI Category Distribution](INSERT_RELATIVE_PATH_TO_BMI_CATEGORY_DISTRIBUTION_IMAGE_HERE)
-    *Bar chart showing the number of male and female students in each BMI category.*
-    ```
+
+    ![BMI Category Distribution](https://downlabs.org/wp-content/uploads/2025/01/BMI_Age_Group-768x446.png)
 
     - **Smoking Habits Distribution:** Calculates and visualizes the distribution of smoking habits (Smoker/Non-Smoker) across age groups.
 
-    ```markdown
-    ![Smoking Habits Distribution](INSERT_RELATIVE_PATH_TO_SMOKING_HABITS_DISTRIBUTION_IMAGE_HERE)
+    
+    ![Smoking Habits Distribution](https://downlabs.org/wp-content/uploads/2025/01/Smoking_Habit_Age_Group-768x445.png)
     *Bar chart showing the number of smokers and non-smokers in each age group.*
-    ```
+    
 
     - **Diabetes Distribution:** Calculates and visualizes the distribution of diabetes diagnosis (Yes/No) across age groups.
 
-    ```markdown
-    ![Diabetes Distribution](INSERT_RELATIVE_PATH_TO_DIABETES_DISTRIBUTION_IMAGE_HERE)
+    
+    ![Diabetes Distribution](https://downlabs.org/wp-content/uploads/2025/01/Diabetes_Age_Group-768x445.png)
     *Bar chart showing the number of students with and without diabetes in each age group.*
-    ```
+    
 ## Conclusion
 
 This project reveals a **predominantly healthy profile of medical students** within the dataset, characterized by a balanced gender distribution, concentration in typical medical education age ranges, a majority with normal BMI, and low rates of smoking and diabetes.
