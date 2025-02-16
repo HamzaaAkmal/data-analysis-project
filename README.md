@@ -1,7 +1,7 @@
 # Medical Students Health Analysis
 
 ## Github Profile Link
-- [Hamza Akmal Project](https://github.com/HamzaaAkmal/data-analysis-project.git)
+- [Hamza Akmal Project](https://aiii.news)
 
 ## About the Dataset
 
